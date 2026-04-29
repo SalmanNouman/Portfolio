@@ -7,7 +7,7 @@ const projects = [
     title: "Augi",
     category: "AR and AI",
     year: "2026",
-    image: "./assets/augi.png",
+    image: "./assets/Augi.png",
     link: "https://github.com/IndecisiveJester"
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     title: "Settlement-Navigator",
     category: "Civic and Immigration",
     year: "2025",
-    image: "./assets/Settlement-Navigator.png",
+    image: "./assets/Settlement-navigator.png",
     link: "https://github.com/SalmanNouman/Settlement-Navigator"
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     title: "VerbOS",
     category: "Agentic Desktop Application",
     year: "2025",
-    image: "./assets/verbos.png",
+    image: "./assets/Verbos.png",
     link: "https://github.com/SalmanNouman/VerbOS"
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     title: "Rohingya Language Training Pipeline",
     category: "Machine Learning",
     year: "2024",
-    image: "./assets/Rohingya.png",
+    image: "./assets/Rohingya-translator-pipeline.png",
     link: "https://github.com/SalmanNouman/rohingya-translator"
   }
 ];

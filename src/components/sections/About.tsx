@@ -12,7 +12,7 @@ export default function About() {
           className="w-full lg:w-5/12 aspect-[3/4] relative overflow-hidden"
         >
           <img 
-            src="./Salman.jpeg" 
+            src="./assets/Salman-pfp.jpeg" 
             alt="Salman Nouman Abulqasim Profile Placeholder" 
             className="object-cover w-full h-full filter grayscale hover:grayscale-0 transition-all duration-700"
           />

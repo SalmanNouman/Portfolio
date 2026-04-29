@@ -5,6 +5,7 @@ const experiences = [
     id: 1,
     role: "Software Developer (Co-op)",
     company: "VARLab",
+    logo: "./assets/VARLab-logo.png",
     period: "Sep 2024 — Aug 2025",
     description: "Engineered production-ready Unity-based 3D Digital Learning Experiences. Rotated across engineering teams to diagnose and resolve legacy bugs, and architected a secure WebGL result-export system for high-fidelity simulation data."
   },
@@ -12,6 +13,7 @@ const experiences = [
     id: 2,
     role: "Volunteer Tech Assistant",
     company: "Rohingya Centre",
+    logo: "./assets/RCC-logo.jpg",
     period: "Dec 2019 — Sep 2024",
     description: "Ensured 100% uptime for community events by pre-emptively troubleshooting AV hardware and networking equipment. Provided multilingual technical assistance, bridging the digital divide for non-technical users."
   }
@@ -51,7 +53,7 @@ export default function Experience() {
                 </span>
               </div>
               <div className="flex items-center gap-4 mb-6">
-                <img src={`https://picsum.photos/seed/${exp.company.replace(/\s+/g, '')}/48/48`} alt={`${exp.company} Logo`} className="w-10 h-10 rounded-lg" />
+                <img src={exp.logo} alt={`${exp.company} Logo`} className="w-10 h-10 rounded-lg object-contain bg-white" />
                 <p className="text-xl uppercase tracking-widest font-medium">
                   {exp.company}
                 </p>
