@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  :root {
+    --background: 40 33% 98%; /* Soft luxury cream */
+    --foreground: 240 10% 10%; /* Deep slate/black */
+    
+    --card: 40 33% 98%;
+    --card-foreground: 240 10% 10%;
+    
+    --popover: 40 33% 98%;
+    --popover-foreground: 240 10% 10%;
+    
+    --primary: 240 10% 10%;
+    --primary-foreground: 40 33% 98%;
+    
+    --secondary: 40 15% 92%;
+    --secondary-foreground: 240 10% 10%;
+    
+    --muted: 40 15% 92%;
+    --muted-foreground: 240 5% 45%;
+    
+    --accent: 45 40% 60%; /* Champagne/Gold accent */
+    --accent-foreground: 40 33% 98%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 40 15% 85%;
+    --input: 40 15% 85%;
+    --ring: 240 10% 10%;
+
+    --radius: 0rem;
+  }
+
+  .dark {
+    --background: 240 10% 6%; /* Deep luxury slate/black */
+    --foreground: 40 33% 98%; /* Soft cream */
+    
+    --card: 240 10% 6%;
+    --card-foreground: 40 33% 98%;
+    
+    --popover: 240 10% 6%;
+    --popover-foreground: 40 33% 98%;
+    
+    --primary: 40 33% 98%;
+    --primary-foreground: 240 10% 6%;
+    
+    --secondary: 240 5% 12%;
+    --secondary-foreground: 40 33% 98%;
+    
+    --muted: 240 5% 12%;
+    --muted-foreground: 40 15% 70%;
+    
+    --accent: 45 40% 60%; /* Champagne/Gold accent */
+    --accent-foreground: 240 10% 6%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 40 33% 98%;
+    
+    --border: 240 5% 20%;
+    --input: 240 5% 20%;
+    --ring: 40 33% 98%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased selection:bg-primary selection:text-primary-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-normal;
+  }
+}
+
+/* Elegant Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground/30 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/50;
+}
+
