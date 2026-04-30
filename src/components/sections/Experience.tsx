@@ -21,7 +21,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-32 px-6 md:px-10">
+    <section id="experience" className="py-16 md:py-32 px-4 md:px-10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16">
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
@@ -30,7 +30,7 @@ export default function Experience() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="md:w-1/3"
         >
-          <h2 className="font-display text-5xl md:text-7xl uppercase tracking-tighter sticky top-32">
+          <h2 className="font-display text-3xl sm:text-5xl md:text-7xl uppercase tracking-tighter md:sticky md:top-32">
             Work <br />
             <span className="italic font-normal text-muted-foreground">History</span>
           </h2>

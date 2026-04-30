@@ -18,11 +18,11 @@ function App() {
         <Hobbies />
         <Contact />
       </main>
-      <footer className="py-20 px-6 md:px-10 border-t border-foreground/10 flex flex-col md:flex-row justify-between items-center gap-8">
+      <footer className="py-12 md:py-20 px-4 md:px-10 border-t border-foreground/10 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8 text-center md:text-left">
         <div className="font-display text-2xl uppercase tracking-widest font-semibold">
           S. N. A.
         </div>
-        <div className="flex gap-8 text-sm uppercase tracking-widest font-medium">
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm uppercase tracking-widest font-medium">
           <a href="https://github.com/SalmanNouman" target="_blank" rel="noreferrer" className="hover:underline underline-offset-4">Github</a>
           <a href="https://linkedin.com/in/salmannouman" target="_blank" rel="noreferrer" className="hover:underline underline-offset-4">LinkedIn</a>
           <a href="mailto:salmannouman510@gmail.com" className="hover:underline underline-offset-4">Email</a>

@@ -73,7 +73,7 @@ export default function Hero() {
   return (
     <section 
       ref={containerRef}
-      className="relative h-screen w-full flex flex-col justify-center pt-24 pb-12 px-6 md:px-10 overflow-hidden"
+      className="relative h-screen w-full flex flex-col justify-center pt-20 pb-8 px-4 md:px-10 overflow-hidden"
     >
       <motion.div style={{ y, opacity }} className="relative z-10 flex flex-col lg:flex-row items-center justify-between w-full h-full max-w-7xl mx-auto gap-12">
         
@@ -87,7 +87,7 @@ export default function Hero() {
             <h2 className="text-sm md:text-base font-medium uppercase tracking-[0.2em] mb-4 text-muted-foreground">
               Software Engineer Graduate & AI Enthusiast
             </h2>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-[7.5rem] leading-[0.9] tracking-normal uppercase mb-8">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-[7.5rem] leading-[0.9] tracking-normal uppercase mb-6 md:mb-8">
               Salman <br />
               <span className="italic font-normal">Nouman</span> <br />
               Abulqasim
@@ -107,7 +107,7 @@ export default function Hero() {
         </div>
 
         {/* Canvas */}
-        <div className="w-full lg:w-1/2 h-[40vh] lg:h-[70vh] flex items-center justify-center relative pointer-events-auto">
+        <div className="w-full lg:w-1/2 h-[30vh] sm:h-[35vh] lg:h-[70vh] flex items-center justify-center relative pointer-events-auto">
           <Canvas camera={{ position: [0, 0, 7], fov: 50 }}>
             <ambientLight intensity={0.4} />
             <directionalLight position={[10, 10, 5]} intensity={1.5} color="#ffffff" />
