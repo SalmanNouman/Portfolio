@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link, Network } from 'lucide-react';
 
 export default function About() {
   return (
@@ -64,14 +65,22 @@ export default function About() {
                   return map[s] || s.toLowerCase();
                 };
                 const iconName = getIconName(skill);
+                let CustomIcon = null;
+                if (skill === 'LangChain') CustomIcon = Link;
+                if (skill === 'LangGraph') CustomIcon = Network;
+
                 return (
                   <span key={skill} className="flex items-center gap-2 px-3 py-1 border border-foreground/20 rounded-full text-sm font-medium hover:bg-foreground hover:text-background transition-colors duration-300">
-                    <img 
-                      src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${iconName}/${iconName}-original.svg`} 
-                      alt={skill} 
-                      className="w-4 h-4" 
-                      onError={(e) => { e.currentTarget.style.display = 'none'; }} 
-                    />
+                    {CustomIcon ? (
+                      <CustomIcon className="w-4 h-4" />
+                    ) : (
+                      <img 
+                        src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${iconName}/${iconName}-original.svg`} 
+                        alt={skill} 
+                        className="w-4 h-4" 
+                        onError={(e) => { e.currentTarget.style.display = 'none'; }} 
+                      />
+                    )}
                     {skill}
                   </span>
                 );
