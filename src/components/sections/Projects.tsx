@@ -37,7 +37,6 @@ const projects = [
 ];
 
 export default function Projects() {
-  // Define dynamic bento spans for 4 items
   const getBentoStyle = (index: number) => {
     switch(index) {
       case 0: return 'md:col-span-7 min-h-[400px] md:min-h-[500px]';
@@ -85,7 +84,7 @@ export default function Projects() {
                 alt={project.title} 
                 className="absolute inset-0 w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 opacity-40 group-hover:opacity-80 group-hover:scale-105"
               />
-              {/* Gradient Overlay for Text Readability */}
+              {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-foreground via-foreground/40 to-transparent opacity-80 pointer-events-none" />
 
               {/* Content */}
