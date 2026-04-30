@@ -12,7 +12,7 @@ export default function Hobbies() {
   const tools = ['Cursor', 'Claude Code', 'Windsurf', 'Devin', 'Codex', 'Gemini CLI'];
 
   return (
-    <section id="hobbies" className="py-32 px-6 md:px-10 bg-background text-foreground border-t border-foreground/10">
+    <section id="hobbies" className="py-16 md:py-32 px-4 md:px-10 bg-background text-foreground border-t border-foreground/10">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
         {/* Left Column */}
         <motion.div
@@ -25,7 +25,7 @@ export default function Hobbies() {
           <h2 className="text-sm font-medium uppercase tracking-[0.2em] mb-8 text-muted-foreground">
             Beyond the Code
           </h2>
-          <h3 className="font-display text-4xl md:text-5xl lg:text-6xl mb-12 leading-tight">
+          <h3 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-8 md:mb-12 leading-tight">
             Life <span className="italic text-muted-foreground">in motion</span>.
           </h3>
           

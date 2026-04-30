@@ -3,14 +3,14 @@ import { Link, Network } from 'lucide-react';
 
 export default function About() {
   return (
-    <section id="about" className="py-32 px-6 md:px-10 bg-secondary text-secondary-foreground">
+    <section id="about" className="py-16 md:py-32 px-4 md:px-10 bg-secondary text-secondary-foreground">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full lg:w-5/12 aspect-[3/4] relative overflow-hidden"
+          className="w-full lg:w-5/12 aspect-[4/3] sm:aspect-[3/4] relative overflow-hidden"
         >
           <img 
             src="./assets/Salman-pfp.jpeg" 
@@ -30,7 +30,7 @@ export default function About() {
           <h2 className="text-sm font-medium uppercase tracking-[0.2em] mb-8 text-muted-foreground">
             About Me
           </h2>
-          <h3 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-10">
+          <h3 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-8 md:mb-10">
             I engineer <span className="font-bold text-muted-foreground">lasting change</span> through <span className="italic text-muted-foreground">technology</span>.
           </h3>
           

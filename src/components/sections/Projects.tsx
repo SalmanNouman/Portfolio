@@ -39,25 +39,25 @@ const projects = [
 export default function Projects() {
   const getBentoStyle = (index: number) => {
     switch(index) {
-      case 0: return 'md:col-span-7 min-h-[400px] md:min-h-[500px]';
-      case 1: return 'md:col-span-5 min-h-[400px] md:min-h-[500px]';
-      case 2: return 'md:col-span-5 min-h-[400px] md:min-h-[500px]';
-      case 3: return 'md:col-span-7 min-h-[400px] md:min-h-[500px]';
-      default: return 'md:col-span-12 min-h-[400px]';
+      case 0: return 'md:col-span-7 min-h-[260px] md:min-h-[500px]';
+      case 1: return 'md:col-span-5 min-h-[260px] md:min-h-[500px]';
+      case 2: return 'md:col-span-5 min-h-[260px] md:min-h-[500px]';
+      case 3: return 'md:col-span-7 min-h-[260px] md:min-h-[500px]';
+      default: return 'md:col-span-12 min-h-[260px] md:min-h-[400px]';
     }
   };
 
   return (
-    <section id="projects" className="py-32 px-6 md:px-10 bg-foreground text-background">
+    <section id="projects" className="py-16 md:py-32 px-4 md:px-10 bg-foreground text-background">
       <div className="max-w-7xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="flex justify-between items-end border-b border-background/20 pb-8 mb-16"
+          className="flex justify-between items-end border-b border-background/20 pb-6 mb-8 md:pb-8 md:mb-16"
         >
-          <h2 className="font-display text-5xl md:text-7xl uppercase tracking-tighter">
+          <h2 className="font-display text-3xl sm:text-5xl md:text-7xl uppercase tracking-tighter">
             Selected <span className="italic font-normal">Works</span>
           </h2>
           <span className="text-sm uppercase tracking-widest hidden md:block">
@@ -76,7 +76,7 @@ export default function Projects() {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, delay: (index % 2) * 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className={`group relative overflow-hidden flex flex-col bg-foreground border border-background/10 p-6 md:p-8 ${getBentoStyle(index)}`}
+              className={`group relative overflow-hidden flex flex-col bg-foreground border border-background/10 p-4 md:p-8 ${getBentoStyle(index)}`}
             >
               {/* Background Image */}
               <img 
