@@ -2,7 +2,7 @@
 
 A high-performance, visually immersive portfolio built with React, TypeScript, and Three.js. This project showcases my technical expertise in full-stack development, AI orchestration, and 3D web experiences.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Framework:** [React 19](https://react.dev/)
 - **Bundler:** [Vite](https://vitejs.dev/)
@@ -13,7 +13,7 @@ A high-performance, visually immersive portfolio built with React, TypeScript, a
 - **Icons:** [Lucide React](https://lucide.dev/)
 - **Deployment:** [GitHub Pages](https://pages.github.com/)
 
-## ✨ Key Features
+## Key Features
 
 - **Interactive 3D Elements:** Leveraging React Three Fiber for immersive visual components.
 - **Bento Grid Projects:** A modern, responsive layout for showcasing selected works.
@@ -21,7 +21,7 @@ A high-performance, visually immersive portfolio built with React, TypeScript, a
 - **Modern Typography:** Clean, high-contrast design focusing on readability and impact.
 - **Responsive Design:** Optimized for all screen sizes, from mobile to desktop.
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 ├── public/              # Static assets (images, icons, resume)
@@ -35,7 +35,7 @@ A high-performance, visually immersive portfolio built with React, TypeScript, a
     └── main.tsx         # Entry point
 ```
 
-## 🛠️ Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -73,7 +73,7 @@ This project is configured for GitHub Pages. To deploy:
 npm run deploy
 ```
 
-## 👤 Author
+## Author
 
 **Salman Nouman Abulqasim**
 - **Title:** Software Engineer Graduate & AI Enthusiast
