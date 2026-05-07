@@ -1,73 +1,86 @@
-# React + TypeScript + Vite
+# Salman Nouman Abulqasim — Software Engineering Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, visually immersive portfolio built with React, TypeScript, and Three.js. This project showcases my technical expertise in full-stack development, AI orchestration, and 3D web experiences.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Framework:** [React 19](https://react.dev/)
+- **Bundler:** [Vite](https://vitejs.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **3D Rendering:** [Three.js](https://threejs.org/) via [@react-three/fiber](https://github.com/pmndrs/react-three-fiber)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Deployment:** [GitHub Pages](https://pages.github.com/)
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Interactive 3D Elements:** Leveraging React Three Fiber for immersive visual components.
+- **Bento Grid Projects:** A modern, responsive layout for showcasing selected works.
+- **Fluid Animations:** Smooth transitions and scroll-triggered effects using Framer Motion.
+- **Modern Typography:** Clean, high-contrast design focusing on readability and impact.
+- **Responsive Design:** Optimized for all screen sizes, from mobile to desktop.
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+├── public/              # Static assets (images, icons, resume)
+└── src/
+    ├── components/
+    │   ├── 3d/          # Three.js components
+    │   ├── layout/      # Shared layout components (Navbar)
+    │   └── sections/    # Main page sections (Hero, About, Projects, etc.)
+    ├── lib/             # Utility functions
+    ├── App.tsx          # Root application component
+    └── main.tsx         # Entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SalmanNouman/Portfolio.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+### Building for Production
+
+To create a production build:
+```bash
+npm run build
 ```
+
+### Deployment
+
+This project is configured for GitHub Pages. To deploy:
+```bash
+npm run deploy
+```
+
+## 👤 Author
+
+**Salman Nouman Abulqasim**
+- **Title:** Software Engineer Graduate & AI Enthusiast
+- **Location:** Kitchener, ON
+- **GitHub:** [@SalmanNouman](https://github.com/SalmanNouman)
+- **LinkedIn:** [salmannouman](https://linkedin.com/in/salmannouman)
+- **Email:** salmannouman510@gmail.com
+
+---
+© 2026 Salman Nouman Abulqasim. All Rights Reserved.
